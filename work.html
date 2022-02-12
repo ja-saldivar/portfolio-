@@ -1,51 +1,65 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html>
 
 <head>
   <title>Work | Antonio Saldivar</title>
   <meta charset="utf-8" lang="eng">
-  <link href="./resources/css/style.css">
+  <link href="./resources/css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&family=Roboto:ital,wght@0,400;0,700;1,500&family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <cript src="./script.js"></cript>
 </head>
 
 <body>
-  <header>
-    <h1><a href="index.html">Antonio Saldivar</a></h1>
-    <nav>
-      <ul>
-        <li><a href="work.html">WORK</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="grid-container">
+    <header>
+      <h1><a href=" index.html">Antonio Saldivar</a></h1>
+      <nav>
+        <ul>
+          <li><a href="work.html">WORK</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <h2>Some codecademy projects I made</h2>
-    <section>
-      <a href="https://ja-saldivar.github.io/website-design-system/" target="_blank"><img
-          src="./resources/img/website_style.png" alt="Website Style Project" /></a>
-    </section>
+    <main id="work">
+      <section id="projects">
+        <h2>Some <a href="https://codecademy.com" target="_blank">Codecademy</a> Projects I Made</h2>
+        <ul>
+          <li>
+            <a href="https://ja-saldivar.github.io/website-design-system/" target="_blank" id="webstyle">
+              <img src="./resources/img/website_style.png" alt="Website Style Project" />
+            </a>
+          </li>
+          <li>
+            <a href="https://ja-saldivar.github.io/excursion/" target="_blank" id="excursion">
+              <img src="./resources/img/excursion.png" alt="Excursion Project" />
+            </a>
+          </li>
+          <li>
+            <a href="https://ja-saldivar.github.io/tea-cozy/" target="_blank" id="tea" >
+              <img src="./resources/img/tea_cozy.png" alt="Tea Cozy Project" />
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <section>
-      <a href="https://ja-saldivar.github.io/excursion/" target="_blank"><img src="./resources/img/excursion.png"
-          alt="Excursion Project" /></a>
-    </section>
+      <section id="offsite">
+        <h2>Ongoing Website Rebuild</h2>
+        <a href="https://tecnocomm.com.mx" target="_blank">
+          <img src="./resources/img/tecnocomm.png" alt="Tecnocomm Website" id="tecnocomm" />
+        </a>
+      </section>
+    </main>
 
-    <section>
-      <a href="https://ja-saldivar.github.io/tea-cozy/" target="_blank"><img src="./resources/img/tea_cozy.png"
-          alt="Tea Cozy Project" /></a>
-    </section>
-
-    <h2>Ongoing project</h2>
-    <section>
-      <a href="https://tecnocomm.com.mx" target="_blank"><img src="./resources/img/tecnocomm.png"
-          alt="Tecnocomm Website" /></a>
-    </section>
-  </main>
-
-  <footer>
-    <p>Copyright © Antonio Saldivar 2022</p>
-  </footer>
+    <footer>
+      <p>Copyright © Antonio Saldivar 2022</p>
+    </footer>
+  </div>
 </body>
 
 </html>
