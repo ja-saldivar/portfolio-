@@ -11,21 +11,22 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&family=Roboto:ital,wght@0,400;0,700;1,500&family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
-  <div class="grid-container">
-    <header>
-      <h1><a href="index.html">Antonio Saldivar</a></h1>
-      <nav>
-        <ul>
-          <li><a href="work.html">WORK</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <h1><a href="#" data-menu="index" class="menu-item">Antonio Saldivar</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#" data-menu="work" class="menu-item">WORK</a></li>
+        <li><a href="#" data-menu="about" class="menu-item">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
+  <main>
+    <section class="section" id="index-tab">
       <section id="intro">
         <h2>Hello</h2>
         <p>I'm Antonio,<br>
@@ -42,9 +43,9 @@
           <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="96"
               alt="CSS logo" /></li>
           <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              width="96" alt="JS logo" /></li>
+              width="96" alt="Javascript logo" /></li>
           <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="96"
-              alt="React.js logo" /></li>
+              alt="Reactjs logo" /></li>
           <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="96"
               alt="NodeJS logo" /></li>
           <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="96"
@@ -71,12 +72,103 @@
         <p>My <a href="https://www.codecademy.com/profiles/ja_saldivar/certificates/5b32457b646caa5007c30975"
             target="_blank">Web Development Certificate</a></p>
       </section>
-    </main>
+    </section>
 
-    <footer>
-      <p>Copyright © Antonio Saldivar 2022</p>
-    </footer>
-  </div>
+    <section class="section" id="work-tab">
+      <section id="projects">
+        <h2>Some <a href="https://codecademy.com" target="_blank">Codecademy</a> Projects I Made</h2>
+        <ul>
+          <li>
+            <a href="https://ja-saldivar.github.io/website-design-system/" target="_blank" id="webstyle">
+              <img src="./resources/img/website_style.png" alt="Website Style Project" />
+            </a>
+          </li>
+          <li>
+            <a href="https://ja-saldivar.github.io/excursion/" target="_blank" id="excursion">
+              <img src="./resources/img/excursion.png" alt="Excursion Project" />
+            </a>
+          </li>
+          <li>
+            <a href="https://ja-saldivar.github.io/tea-cozy/" target="_blank" id="tea">
+              <img src="./resources/img/tea_cozy.png" alt="Tea Cozy Project" />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="offsite">
+        <h2>Ongoing Website Rebuild</h2>
+        <a href="https://tecnocomm.com.mx" target="_blank">
+          <img src="./resources/img/tecnocomm.png" alt="Tecnocomm Website" id="tecnocomm" />
+        </a>
+      </section>
+    </section>
+
+    <section class="section" id="about-tab">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Antonio, a mechatronics engineer<br>
+          and self-taught developer<br>
+          from Aguascalientes, México.<br>
+          If you like my site</br>
+          don't hesitate to reach out!</p>
+      </section>
+
+      <section id="hobbies">
+        <h2>Things I Like</h2>
+        <ul>
+          <li>Keep my body moving</li>
+          <li>Restful but thoughtful mind</li>
+          <li>Drop the bass</li>
+          <li>Keep up with the pcMasterRace</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <form>
+          <p>Send me a letter!</p>
+          <input type="text" name="name" id="name" placeholder="Name">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <textarea name="massage" id="message" rows="10" placeholder="Message"></textarea>
+        </form>
+        <a href="https://www.github.com/ja-saldivar"><img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="96"
+            alt="Github logo" /></a>
+        <a href="https://www.linkedin.com/in/juansaldivar/"><img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="96"
+            alt="LinkedIn logo" /></a>
+        <a href="https://www.instagram.com/ja_saldivar/">
+          <svg width="96" height="96" viewBox="0 0 3364.7 3364.7" role="img" aria-label="Instagram logo">
+            <title>Instagram logo</title>
+            <defs>
+              <radialGradient id="0" cx="217.76" cy="3290.99" r="4271.92" gradientUnits="userSpaceOnUse">
+                <stop offset=".09" stop-color="#fa8f21" />
+                <stop offset=".78" stop-color="#d82d7e" />
+              </radialGradient>
+              <radialGradient id="1" cx="2330.61" cy="3182.95" r="3759.33" gradientUnits="userSpaceOnUse">
+                <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0" />
+                <stop offset="1" stop-color="#8c3aaa" />
+              </radialGradient>
+            </defs>
+            <path
+              d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9"
+              fill="url(#0)" />
+            <path
+              d="M853.2,3352.8c-200.1-9.1-308.8-42.4-381.1-70.6-95.8-37.3-164.1-81.7-236-153.5S119.7,2988.6,82.6,2892.8c-28.2-72.3-61.5-181-70.6-381.1C2,2295.4,0,2230.5,0,1682.5s2.2-612.8,11.9-829.3C21,653.1,54.5,544.6,82.5,472.1,119.8,376.3,164.3,308,236,236c71.8-71.8,140.1-116.4,236-153.5C544.3,54.3,653,21,853.1,11.9,1069.5,2,1134.5,0,1682.3,0c548,0,612.8,2.2,829.3,11.9,200.1,9.1,308.6,42.6,381.1,70.6,95.8,37.1,164.1,81.7,236,153.5s116.2,140.2,153.5,236c28.2,72.3,61.5,181,70.6,381.1,9.9,216.5,11.9,281.3,11.9,829.3,0,547.8-2,612.8-11.9,829.3-9.1,200.1-42.6,308.8-70.6,381.1-37.3,95.8-81.7,164.1-153.5,235.9s-140.2,116.2-236,153.5c-72.3,28.2-181,61.5-381.1,70.6-216.3,9.9-281.3,11.9-829.3,11.9-547.8,0-612.8-1.9-829.1-11.9"
+              fill="url(#1)" />
+            <path
+              d="M1269.25,1689.52c0-230.11,186.49-416.7,416.6-416.7s416.7,186.59,416.7,416.7-186.59,416.7-416.7,416.7-416.6-186.59-416.6-416.7m-225.26,0c0,354.5,287.36,641.86,641.86,641.86s641.86-287.36,641.86-641.86-287.36-641.86-641.86-641.86S1044,1335,1044,1689.52m1159.13-667.31a150,150,0,1,0,150.06-149.94h-0.06a150.07,150.07,0,0,0-150,149.94M1180.85,2707c-121.87-5.55-188.11-25.85-232.13-43-58.36-22.72-100-49.78-143.78-93.5s-70.88-85.32-93.5-143.68c-17.16-44-37.46-110.26-43-232.13-6.06-131.76-7.27-171.34-7.27-505.15s1.31-373.28,7.27-505.15c5.55-121.87,26-188,43-232.13,22.72-58.36,49.78-100,93.5-143.78s85.32-70.88,143.78-93.5c44-17.16,110.26-37.46,232.13-43,131.76-6.06,171.34-7.27,505-7.27S2059.13,666,2191,672c121.87,5.55,188,26,232.13,43,58.36,22.62,100,49.78,143.78,93.5s70.78,85.42,93.5,143.78c17.16,44,37.46,110.26,43,232.13,6.06,131.87,7.27,171.34,7.27,505.15s-1.21,373.28-7.27,505.15c-5.55,121.87-25.95,188.11-43,232.13-22.72,58.36-49.78,100-93.5,143.68s-85.42,70.78-143.78,93.5c-44,17.16-110.26,37.46-232.13,43-131.76,6.06-171.34,7.27-505.15,7.27s-373.28-1.21-505-7.27M1170.5,447.09c-133.07,6.06-224,27.16-303.41,58.06-82.19,31.91-151.86,74.72-221.43,144.18S533.39,788.47,501.48,870.76c-30.9,79.46-52,170.34-58.06,303.41-6.16,133.28-7.57,175.89-7.57,515.35s1.41,382.07,7.57,515.35c6.06,133.08,27.16,223.95,58.06,303.41,31.91,82.19,74.62,152,144.18,221.43s139.14,112.18,221.43,144.18c79.56,30.9,170.34,52,303.41,58.06,133.35,6.06,175.89,7.57,515.35,7.57s382.07-1.41,515.35-7.57c133.08-6.06,223.95-27.16,303.41-58.06,82.19-32,151.86-74.72,221.43-144.18s112.18-139.24,144.18-221.43c30.9-79.46,52.1-170.34,58.06-303.41,6.06-133.38,7.47-175.89,7.47-515.35s-1.41-382.07-7.47-515.35c-6.06-133.08-27.16-224-58.06-303.41-32-82.19-74.72-151.86-144.18-221.43S2586.8,537.06,2504.71,505.15c-79.56-30.9-170.44-52.1-303.41-58.06C2068,441,2025.41,439.52,1686,439.52s-382.1,1.41-515.45,7.57"
+              fill="#fff" />
+          </svg></a>
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Copyright © Antonio Saldivar 2022</p>
+  </footer>
 </body>
-
+<script src="script.js"></script>
 </html>

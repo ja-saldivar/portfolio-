@@ -33,7 +33,7 @@ li {
 
 a:link,
 a:visited {
-  color: black;
+  color: #000;
 }
 
 img {
@@ -41,11 +41,15 @@ img {
 }
 
 header {
-  min-width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #9DA7B2;
+  z-index: 1;
 }
 
 nav li {
@@ -54,13 +58,18 @@ nav li {
 }
 
 main {
-  width: 80%;
+  width: 100%;
   margin: 5rem auto;
   font-size: 3rem;
+  position: relative;
+  top: 7rem;
 }
 
 footer {
+  position: relative;
+  top: 7rem;
   margin: 10rem auto 0;
+  height: 5rem;
 }
 
 form {
@@ -82,11 +91,16 @@ input {
 }
 
 main section,
-#work h2 {
+#work-tab h2 {
   margin-top: 10rem;
 }
 
-#skills ul{
+#work-tab,
+#about-tab {
+  display: none;
+}
+
+#skills ul {
   flex-wrap: wrap;
 }
 
@@ -98,18 +112,55 @@ main section,
   margin: 1rem;
 }
 
-#tea:hover img{
-  transform: scale(2);
+#tea:hover img,
+#webstyle:hover img,
+#excursion:hover img {
+  transform: scale(140%);
 }
 
-#webstyle:hover img{
-  transform: scale(2);
+@media screen and (min-width: 1400px) {
+  #index-tab {
+    width: 80%;
+    margin: auto;
+  }
+  #work-tab,
+  #about-tab {
+  width: 90%;
+  margin: auto;
+  }
 }
 
-#excursion:hover img{
-  transform: scale(2);
+@media screen and (max-width: 1400px) {
+  #work-tab {
+  width: 88%;
+  margin: auto;
+  }
 }
 
+@media screen and (max-width: 1000px) {
+  #projects ul {
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  }
+
+  #tea:hover img,
+  #webstyle:hover img,
+  #excursion:hover img {
+  transform: none;
+}
+}
+
+@media screen and (max-width: 720px) {
+  header h1 {
+    width: 50%;
+  }
+
+  #index-tab {
+  width: 80%;
+  margin: auto;
+  }
+}
 
 #hobbies ul {
   flex-direction: column;
@@ -119,7 +170,7 @@ main section,
   line-height: 5rem;
 }
 
-#hobbies li{
+#hobbies li {
   margin: 1.5rem;
 }
 
