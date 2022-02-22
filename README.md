@@ -49,5 +49,5 @@ Project is: _finished_.
 
 
 ## Room for Improvement
-Check WCAG
-Improve some styles
+- Check WCAG
+- Improve some styles
