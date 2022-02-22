@@ -90,6 +90,10 @@ main section,
   margin: 15rem auto;
 }
 
+#certificate a {
+  font-style: italic;
+}
+
 #projects li {
   margin: 1rem;
 }
